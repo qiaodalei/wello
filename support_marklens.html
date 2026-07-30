@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarkLens Support</title>
+  <style>
+    :root {
+      --ink: #10231f;
+      --muted: #5f756f;
+      --line: #d9e9e4;
+      --paper: #f7fbfa;
+      --card: #ffffff;
+      --green: #12a886;
+      --mint: #79dfc8;
+      --coral: #ff745f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 56px;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 72px 1fr;
+      align-items: center;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 18px 42px rgba(18, 168, 134, .18);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 50px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    section {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 21px;
+    }
+
+    p, li {
+      font-size: 16px;
+    }
+
+    a {
+      color: #087f67;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .accent {
+      color: var(--coral);
+      font-weight: 700;
+    }
+
+    @media (max-width: 560px) {
+      header {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="mark" src="app-icon-marklens.png" alt="MarkLens app icon">
+      <div>
+        <h1>MarkLens Support</h1>
+        <p class="lead">Markdown and HTML preview help, privacy, and contact information.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Contact</h2>
+        <p>For support, bug reports, or feature requests, email:</p>
+        <p><a class="button" href="mailto:qlxp21@gmail.com">qlxp21@gmail.com</a></p>
+      </section>
+
+      <section>
+        <h2>Supported Files</h2>
+        <p>MarkLens supports local Markdown and HTML files:</p>
+        <ul>
+          <li><span class="accent">Markdown:</span> `.md`, `.markdown`</li>
+          <li><span class="accent">HTML:</span> `.html`, `.htm`</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Import Files</h2>
+        <p>Open MarkLens, tap the add button, and choose files from the iOS Files picker. Imported files are copied into local app storage.</p>
+      </section>
+
+      <section>
+        <h2>Preview and Source</h2>
+        <p>Open a document and switch between rendered preview and source text to inspect formatting or markup.</p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>MarkLens does not collect personal data or upload imported documents.</p>
+        <p><a href="YOUR_PRIVACY_POLICY_URL">Read the privacy policy</a></p>
+      </section>
+
+      <section>
+        <h2>Troubleshooting</h2>
+        <p>If a file does not render as expected, check that it is UTF-8 encoded and that linked local images use paths available from the imported document location.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
