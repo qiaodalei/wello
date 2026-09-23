@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>时空回声 · Time Echo</title>
+<style>
+  :root { --green:#306230; --ink:#0f380f; --sub:#5c6b52; --line:#d5ddc4; --lcd:#9bbc0f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); background:#fff; line-height:1.6; }
+  .hero { background:var(--lcd); color:var(--ink); padding:64px 20px 56px; text-align:center; }
+  .logo { width:84px; height:84px; border-radius:18px; background:var(--ink); margin:0 auto 18px; }
+  h1 { font-size: 30px; margin: 6px 0 6px; }
+  .tag { font-size: 17px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 72px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+  .feat { border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .feat h3 { margin:0 0 6px; font-size:17px; color:var(--green); }
+  .feat p { margin:0; color:#243024; font-size:14px; }
+  .links { text-align:center; margin-top:48px; }
+  .links a { color:var(--green); margin:0 12px; font-size:15px; }
+  footer { text-align:center; color:var(--sub); font-size:13px; padding:24px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo" role="img" aria-label="时空回声"></div>
+    <h1>时空回声 · Time Echo</h1>
+    <div class="tag">一个方块，自动前进。吃到目标，就会多出一个回声重走你的旧路。</div>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+      <div class="feat"><h3>滑动转向</h3><p>方块不会停下。向上、下、左、右滑动改变方向，不能直接掉头。</p></div>
+      <div class="feat"><h3>回声重走旧路</h3><p>每得 1 分，出现一个回声。它不追你，只是把你走过的路再走一遍。</p></div>
+      <div class="feat"><h3>本地最高分</h3><p>最高分只留在这台 iPhone 上。撞墙或撞上回声后，可以马上再来一局。</p></div>
+      <div class="feat"><h3>离线单机</h3><p>不需要账号和网络。没有广告，没有内购，不收集个人信息。支持中文和英文。</p></div>
+    </div>
+
+    <div class="links">
+      <a href="./privacy.html">隐私政策 Privacy</a>
+      <a href="./support.html">技术支持 Support</a>
+      <a href="mailto:qlxp21@gmail.com">联系我们 Contact</a>
+    </div>
+  </div>
+
+  <footer>© 2026 时空回声 · Time Echo</footer>
+</body>
+</html>
